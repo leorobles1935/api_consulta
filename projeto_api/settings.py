@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'projeto_api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'verceldb',
+        'USER': 'default',
+        'PASSWORD': 'LbYAKEp3o8vz',
+        'HOST': 'ep-morning-cake-a4z5s7x4-pooler.us-east-1.aws.neon.tech',
+        'PORT': '5432',
     }
 }
 
